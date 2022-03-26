@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:riverpod_app/logic/create_post_notifier.dart';
 import 'package:riverpod_app/logic/edit_post_notifier.dart';
 
 final editPostNotifier = StateNotifierProvider.autoDispose<EditPostNotifier, EditPostState>((_) => EditPostNotifier());

@@ -3,8 +3,6 @@ import 'dart:developer';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_app/services/service.dart';
 
-import '../models/post.dart';
-
 class CreatePostState {
   bool loading = false;
   String title = "";

@@ -25,7 +25,7 @@ class EditPostNotifier extends StateNotifier<EditPostState> {
   Future<Post> fetchPost(String id) async {
     state = state.copyWith(loading: true);
     final service = Service();
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     state = state.copyWith(loading: false);
     final res = await service.getPost(id);
     return res;
